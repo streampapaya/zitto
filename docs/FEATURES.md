@@ -1,0 +1,12 @@
+- Native Windows desktop app built with Zig and Win32 APIs.
+- Creates a borderless popup window with a custom window class.
+- Uses a simple MVC-style split across app, controller, model, and view modules.
+- Renders UI panels as colored rectangles through GDI drawing calls.
+- Supports `full`, `minimal`, and `empty` layout modes.
+- Computes title, sidebar, center, terminal, and footer panel regions.
+- Treats the top title area as draggable via `WM_NCHITTEST`.
+- Repaints the window on `WM_PAINT` and invalidates on `WM_SIZE`.
+- Centralizes app name, default sizing, layout mode, and theme colors in config.
+- Keeps window state in a dedicated `WindowModel`.
+- Converts UTF-8 strings to UTF-16 for Win32 window registration and creation.
+- Installs a `run` target in Zig build for launching the executable manually.
