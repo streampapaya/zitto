@@ -5,8 +5,8 @@ pub const LayoutStyle = enum {
 };
 
 pub const AppConfig = struct {
-    pub const app_name = "ZDitto";
-    pub const window_class = "ZDITTO_CLASS";
+    pub const app_name = "ZITTO";
+    pub const window_class = "ZITTO_CLASS";
 
     // default resolution
     pub const width: i32 = 1920;
