@@ -12,8 +12,8 @@ pub const Layout = struct {
 pub fn computeLayout(
     width: i32,
     height: i32,
+    title_h: i32,
 ) Layout {
-    const title_h = 40;
     const footer_h = 25;
     const left_w = 220;
     const right_w = 260;

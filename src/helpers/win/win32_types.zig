@@ -24,6 +24,22 @@ pub const PAINTSTRUCT = extern struct {
     rgbReserved: [32]u8,
 };
 
+pub const RECT = extern struct {
+    left: i32,
+    top: i32,
+    right: i32,
+    bottom: i32,
+};
+
+pub const HMONITOR = ?*anyopaque;
+
+pub const MONITORINFO = extern struct {
+    cbSize: u32,
+    rcMonitor: RECT,
+    rcWork: RECT,
+    dwFlags: u32,
+};
+
 pub const WNDCLASSW = extern struct {
     style: u32,
     lpfnWndProc: *const fn (HWND, u32, usize, isize) callconv(.c) isize,

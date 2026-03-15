@@ -11,10 +11,12 @@ const layout_engine = @import("layout_engine.zig");
 pub fn build(
     width: i32,
     height: i32,
+    title_height: i32,
 ) LayoutRender {
     const layout = layout_engine.computeLayout(
         width,
         height,
+        title_height,
     );
 
     var out = LayoutRender.init();
